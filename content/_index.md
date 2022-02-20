@@ -59,7 +59,7 @@ graph LR
     C --> D
 {{< /mermaid >}}
 
-### Expand with markdown & shortcodes
+### Expand with mermaid shortcode
 
 {{< expand >}}
 
@@ -72,3 +72,17 @@ graph LR
 {{< /mermaid >}}
 
 {{< /expand >}}
+
+### Expand with mermaid code fences
+
+{{% expand %}}
+
+```mermaid
+graph LR
+    A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+```
+
+{{% /expand %}}
